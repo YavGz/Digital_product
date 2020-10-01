@@ -1,0 +1,45 @@
+.container{
+  max-width: 80%;
+  /* margin:auto; */
+  
+  margin: 20px auto 50px auto ;
+  display: grid;
+  grid-template: repeat(3, minmax(150px, 1fr)) / repeat(3, 1fr);
+  grid-row-gap: 15vh;
+  max-height: 1200px;
+  grid-template-areas:"title title title"
+                      "image text1 text1"
+                      "text2 text2 image2"
+                      "image3 text3 text3";
+  align-content: center;
+  align-items: center;
+}
+.container img{
+  max-width: 85%;
+}
+.item_image1{
+  grid-area: image;
+}
+.item_text1{
+  grid-area: text1;
+}
+.item_image2{
+  grid-area: image2;
+}
+.item_text2{
+  grid-area: text2;
+}
+.item_image3{
+  grid-area: image3;
+}
+.item_text3{
+  grid-area: text3;
+}
+.title{
+  grid-area: title;
+}
+/* container > row > column */
+
+
+
+
