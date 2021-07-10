@@ -1,3 +1,18 @@
+@media (max-width:769px){
+  .main_button{
+    width: 100%;
+    background-color: #7acc2d ;
+    font-size: 12px;
+    display: flex;
+    padding: var(--min-space);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 0 auto
+  }
+}
+
 @media (max-width:600px){
   .products{
     display: inherit;

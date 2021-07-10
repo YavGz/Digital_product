@@ -17,12 +17,15 @@
 }
 /* variables------------- */
 
+html {
+  font-size:62.5%;
+  scroll-behavior: smooth;
+}
 
-
-html, body{
+body{
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;}
 nav{
   display: flex;
@@ -70,6 +73,7 @@ p, label{
   display: flex;
   height: 95px;
   background-size: cover;
+  justify-content: center;
 
 }
 .product{
@@ -93,6 +97,7 @@ p, label{
   border: none;
   cursor: pointer;
   border-radius: 2px;
+  margin: 0.2rem;
 }
 .main_button:hover{
   background-color: #5c9c20;
@@ -101,8 +106,9 @@ p, label{
 
 
 .beneficios{
-  padding: 10%;
   display: flex;
+  padding: 10%;
+  justify-content: center;
 }
 .beneficio{
   text-align: center;
@@ -121,7 +127,6 @@ p, label{
 .mentions{
   display: flex;
   padding: 5%;
-  /* background-color: var(--color-gray); */
 }
 .mention img{
   width: 100%;
@@ -134,8 +139,6 @@ h2.mentions_title{
   margin: 1vw;
   box-shadow: 0px 1px 4px var(--shadow-color);
 }
-/* .mentions_content{
-} */
 .mention .text{
   padding: var(--min-space);
 }
@@ -153,39 +156,4 @@ footer{
 }
 footer a{
   color: var(--color-white);
-}
-
-/* -----grid del formulario de venta */
-.container_form{
-  display: grid;
-  grid-template: minmax(auto, auto) / 1fr 1fr ;
-  max-width: 60%;
-  margin: 60px auto 60px auto;
-  max-height: auto;
-  grid-gap: 10px;
-  flex-wrap: nowrap;
-}
-.res_venta{
-  /* border: 3px solid red; */
-  padding: 10px;
-  box-shadow: 0px 1px 5px var(--shadow-color)
-}
-.venta_image{
-  text-align: center;
-}
-.modulo_pago{
-  padding: 10px;
-  box-shadow: 0px 1px 5px var(--shadow-color);
-  padding-right: 10px;
-}
-.modulo_pago input{
-  margin-bottom: var(--min-space);
-  height: 30px;
-  width: 96.2%;
-  border-radius: 2px;
-  border: 1px solid var(--color-black);
-}
-.modulo_pago button{
-  margin: 20px auto;
-  font-size: var(--medium-space);
 }

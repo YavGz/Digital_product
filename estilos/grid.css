@@ -1,8 +1,8 @@
 .container{
   max-width: 80%;
   /* margin:auto; */
-  
-  margin: 20px auto 50px auto ;
+  justify-self: center;
+  margin: 20px auto 60px auto ;
   display: grid;
   grid-template: repeat(3, minmax(150px, 1fr)) / repeat(3, 1fr);
   grid-row-gap: 15vh;
